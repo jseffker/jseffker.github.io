@@ -20,23 +20,28 @@
 
     </h2>
     <div style="
-      display: flexbox;
+      display: flex;
       max-width: 80%;
       margin: 0 10%">
       <div>
-        - I Heard Him Come (Celine Bowman) https://www.youtube.com/watch?v=-yLssQOpJbQ
+        - I Heard Him Come (Celine Bowman)
+        <a href="https://www.youtube.com/watch?v=-yLssQOpJbQ">
+          https://www.youtube.com/watch?v=-yLssQOpJbQ
+        </a>
       </div>
       <div>
-
-        - I Need You (Jet Trouble) https://www.youtube.com/watch?v=0PjFObNPQ5s
+        - I Need You (Jet Trouble)
+        <a href="https://www.youtube.com/watch?v=0PjFObNPQ5s">
+          https://www.youtube.com/watch?v=0PjFObNPQ5s
+        </a>
       </div>
     </div>
     <h2 style="
       text-align: center;">
-      Favorite scriptures and song lyrics:
+      Favorite scripture, quotes, and song lyrics:
     </h2>
     <div style="
-      display: flexbox;
+      display: flex;
       width: 50%;
       margin: 0 10%">
       <div>
@@ -45,27 +50,26 @@
     </div>
     <h2 style="
       text-align: center;">
-      Inspirated thoughts, quotes, and ideas about Christ:
+      Inspired thoughts, quotes, and ideas about Christ:
     </h2>
-    <a href="./Love-for-God-as-the-motivation.html">
-      <div style="
-      display: flexbox;
-      width: 50%;
-      margin: 0 10%">
-        <div>
-          Love for God as the Motivation
-        </div>
-    </a>
-    <a>
-      <div style="
-      display: flexbox;
-      width: 50%;
-      margin: 0 10%">
-        <div>
-          Hearing the Holy Ghost
-        </div>
-    </a>
-    </div>
+    <div id="pages"></div>
+    <script src="./manifest.js"></script>
+    <script>
+      console.log(files)
+      for (file of files) {
+        let new_element_1 = document.createElement("div");
+        new_element_1.innerText = file;
+        let new_element_2 = document.createElement("a");
+        new_element_2.style = `
+          display: flex;
+          width: 50%;
+          margin: 0 10%
+        `;
+        new_element_2.href = "./posts/published/" + file;
+        new_element_2.appendChild(new_element_1);
+        document.getElementById('pages').appendChild(new_element_2);
+      } 
+    </script>
   </section>
 </body>
 
