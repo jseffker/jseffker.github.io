@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jared Seffker</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <h1 style="
+    text-align: center;">
+    Thoughts <a href="why.html"><span title="Want to know more about what this site is and my goal with it? Click here.">ⓘ</span></a> :
+    <!-- Repository for ideas and links -->
+  </h1>
+  <section>
+    <div id="thoughts"></div>
+    <div style="
+      display: flex;
+      max-width: 80%;
+      margin: 0 10%">
+
+      <script src="./content/quotes.js"></script>
+      <script>
+        for (quote of quotes) {
+          let new_element_1 = document.createElement("div");
+          new_element_1.innerText = quote.quote;
+          document.getElementById('thoughts').appendChild(new_element_1);
+          if (new_element_1.previousElementSibling !== null) {
+            new_element_1.style.marginTop = "5vh";
+          }
+        }
+      </script>
+    </div>
+
+    <h2 style="
+      text-align: center;">
+      Favorite songs:
+
+    </h2>
+    <div style="
+      display: flex;
+      max-width: 80%;
+      margin: 0 10%">
+      <div id="songs"></div>
+      <script src="./content/songs.js"></script>
+      <script>
+        for (song of songs) {
+          let new_element_1 = document.createElement("div");
+          new_element_1.innerText = song.title + ": \n";
+          console.log(new_element_1.previousSibling)
+          let new_element_2 = document.createElement("a");
+          new_element_2.href = song.link;
+          new_element_2.innerText = song.link;
+          new_element_1.appendChild(new_element_2);
+          document.getElementById('songs').appendChild(new_element_1);
+          if (new_element_1.previousElementSibling !== null) {
+            new_element_1.style.marginTop = "5vh";
+          }
+        }
+      </script>
+    </div>
+    <h2 style="
+      text-align: center;">
+      Favorite scripture, quotes, and song lyrics:
+    </h2>
+    <div style="
+      display: flex;
+      width: 50%;
+      margin: 0 10%">
+      <div>
+        -
+      </div>
+    </div>
+    <h2 style="
+      text-align: center;">
+      Inspired thoughts, quotes, and ideas about Christ:
+    </h2>
+    <div id="pages"></div>
+    <script src="./content/posts/manifest.js"></script>
+    <script>
+      console.log(files)
+      for (file of files) {
+        let new_element_1 = document.createElement("div");
+        new_element_1.innerText = file;
+        let new_element_2 = document.createElement("a");
+        new_element_2.style = `
+          display: flex;
+          width: 50%;
+          margin: 0 10%
+        `;
+        new_element_2.href = "./content/posts/published/" + file;
+        new_element_2.appendChild(new_element_1);
+        document.getElementById('pages').appendChild(new_element_2);
+      } 
+    </script>
+    <a href="music-game.html">
+      Play the music game
+    </a>
+  </section>
+</body>
+
+</html>

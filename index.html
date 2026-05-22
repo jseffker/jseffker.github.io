@@ -1,104 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Jared Seffker</title>
-  <link rel="stylesheet" href="styles.css">
+  <title>Document</title>
 </head>
-
 <body>
-  <h1 style="
-    text-align: center;">
-    Thoughts <a href="why.html"><span title="Want to know more about what this site is and my goal with it? Click here.">ⓘ</span></a> :
-    <!-- Repository for ideas and links -->
-  </h1>
-  <section>
-    <div id="thoughts"></div>
-    <div style="
-      display: flex;
-      max-width: 80%;
-      margin: 0 10%">
-
-      <script src="./content/quotes.js"></script>
-      <script>
-        for (quote of quotes) {
-          let new_element_1 = document.createElement("div");
-          new_element_1.innerText = quote.quote;
-          document.getElementById('thoughts').appendChild(new_element_1);
-          if (new_element_1.previousElementSibling !== null) {
-            new_element_1.style.marginTop = "5vh";
-          }
-        }
-      </script>
-    </div>
-
-    <h2 style="
-      text-align: center;">
-      Favorite songs:
-
-    </h2>
-    <div style="
-      display: flex;
-      max-width: 80%;
-      margin: 0 10%">
-      <div id="songs"></div>
-      <script src="./content/songs.js"></script>
-      <script>
-        for (song of songs) {
-          let new_element_1 = document.createElement("div");
-          new_element_1.innerText = song.title + ": \n";
-          console.log(new_element_1.previousSibling)
-          let new_element_2 = document.createElement("a");
-          new_element_2.href = song.link;
-          new_element_2.innerText = song.link;
-          new_element_1.appendChild(new_element_2);
-          document.getElementById('songs').appendChild(new_element_1);
-          if (new_element_1.previousElementSibling !== null) {
-            new_element_1.style.marginTop = "5vh";
-          }
-        }
-      </script>
-    </div>
-    <h2 style="
-      text-align: center;">
-      Favorite scripture, quotes, and song lyrics:
-    </h2>
-    <div style="
-      display: flex;
-      width: 50%;
-      margin: 0 10%">
-      <div>
-        -
-      </div>
-    </div>
-    <h2 style="
-      text-align: center;">
-      Inspired thoughts, quotes, and ideas about Christ:
-    </h2>
-    <div id="pages"></div>
-    <script src="./content/posts/manifest.js"></script>
-    <script>
-      console.log(files)
-      for (file of files) {
-        let new_element_1 = document.createElement("div");
-        new_element_1.innerText = file;
-        let new_element_2 = document.createElement("a");
-        new_element_2.style = `
-          display: flex;
-          width: 50%;
-          margin: 0 10%
-        `;
-        new_element_2.href = "./content/posts/published/" + file;
-        new_element_2.appendChild(new_element_1);
-        document.getElementById('pages').appendChild(new_element_2);
-      } 
-    </script>
-    <a href="music-game.html">
-      Play the music game
-    </a>
-  </section>
+  <h1>Finding Happiness and Power in Christ</h1>
+  <h2>A compilation of thoughts, scriptures, stories, and music -- centered around finding happiness and power in Christ</h2>
+  <h3>By Jared Seffker</h3>
+  <p></p>
+  <p>Paul said that if you don't have charity, you can do nothing. When Christ appeared to the disciples after His resurrection and saw that they weren't doing the work He hoped they would be, He didn't tell them to set goals, or tell them about the consequences that could be waiting -- good or bad. He simply asked them if they loved Him. "We love Him, because He first loved us." The next time you are struggling to find motivation to do something, you could try asking whether you love God, and think of all the ways He's shown love for you. Don't do it for yourself, because frankly, there's a lot God has already given us, even if we don't do everything He wants, and there's a lot of pain we might experience if we do try to do what He wants. That's the nature of having faith in Him -- we usually don't experience the full joy until after we've chosen His way. But, we can do things in love, which, although it does help us, is ultimately selfless, because we don't really know what's in store for us, but we believe in Him. Love -- charity, the pure love of Christ, acts as a power within us that we both possess but which also "possesses" us, as opposed to enmity, which is the both power satan uses and is possessed with to rule over his followers. Choosing to be possessed of charity is not a surrender of agency but a choice of how we'll use it. God said, "There is none beside Me". Ultimately, no one can tell us whether God is right, except for God Himself, and us deciding to believe Him. But, He did give us love -- love that He both showed to us but also gives us the opportunity to try and see if it is sweet. God is love, and God's gift of love is His Son, Jesus Christ. As we follow His example, follow Christ, and seek charity, the pure love of Christ, acting in love, even when it seems hard or we're unsure, we'll have the power to do what He asks as "We love Him, becuase He first loved us."</p>
+  <p>"Let us cheerfully do all things that lie in our power; and then may we stand still, with the utmost assurance, to see the salvation of God, and for his arm to be revealed." Life can be hard, especially when there are trials that seem really hard, and that seem to be stopping us from having greater happiness or accomplishing God's will.Remember this verse and remember that God is in control.</p>
+  <p></p>
+  <!-- <p>Paul said that if you don't have charity, you can do nothing. When Christ appeared to the disciples after His resurrection and saw that they weren't doing the work He hoped they would be, He didn't tell them to set goals, or tell them about the consequences that could be waiting -- good or bad. He simply asked them if they loved Him. A lot of times we blow "love" off as an inadequate motivator, because we assume that it's not logical. Why should we truly do anything in this life if, logically, it doesn't help us. Because didn't God design everything good to help us as well as others? That's true, but knowing that something will help us is not always a great motivator.</p> -->
+  
 </body>
-
 </html>
